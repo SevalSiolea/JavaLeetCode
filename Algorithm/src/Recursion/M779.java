@@ -43,9 +43,9 @@ public class M779 {
 
     /**
      * Description : simple solution, simulate solution<br>
-     * Complexity : time O( N ), per( 0 )<br>
-     * Complexity : space O( N ), per( 0 )<br>
-     * Complexity : N - circle pow of 2, length of result arr<br>
+     * Complexity : time O( 2^N ), per( 0 )<br>
+     * Complexity : space O( 2^N ), per( 0 )<br>
+     * Complexity : N - times of circle<br>
      * Feature : reuse the same array to save resource<br>
      *
      * @param circle times of circle
@@ -78,7 +78,7 @@ public class M779 {
      * Description : clever solution, math and calculate solution<br>
      * Complexity : time O( N ), per( 100 )<br>
      * Complexity : space O( N ), per( 30 )<br>
-     * Complexity : N - circle pow of 2, length of result arr<br>
+     * Complexity : N - times of circle<br>
      *
      * <p>
      * Idea : arr[ circle ][ idx ] comes from arr[ circle - 1 ][ ( idx + 1 ) / 2 ]<br>
@@ -99,7 +99,7 @@ public class M779 {
      * Description : clever solution, math and calculate solution<br>
      * Complexity : time O( N ), per( 100 )<br>
      * Complexity : space O( N ), per( 70 )<br>
-     * Complexity : N - circle pow of 2, length of result arr<br>
+     * Complexity : N - times of circle<br>
      *
      * <p>
      * Idea : arr[ circle ] has the same first half as arr[ circle - 1 ]<br>
@@ -121,9 +121,9 @@ public class M779 {
 
     /**
      * Description : simple solution, simulate solution<br>
-     * Complexity : time O( N ), per( 0 )<br>
-     * Complexity : space O( N ), per( 0 )<br>
-     * Complexity : N - circle pow of 2, length of result arr<br>
+     * Complexity : time O( 2^N ), per( 0 )<br>
+     * Complexity : space O( 2^N ), per( 0 )<br>
+     * Complexity : N - times of circle<br>
      * Feature : translate rail recursion in solution1 to circle<br>
      *
      * @param circle times of circle
